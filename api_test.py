@@ -3,7 +3,7 @@ import os
 
 #ユーザ登録
 def userregist(addres,passowrd):
-    url = "http://192.168.3.37/api/makeconnection.php"
+    url = "http://procon.schnetworks.net/api/makeconnection.php"
 
     postitems = {
         'address':addres,
