@@ -101,7 +101,7 @@ APIを作るときに動作テストで使ったpyファイルです。
 
 返却物  
 
-makeconnection.phpと同じ内容がそのまま帰ってきます。json.dampsするなりして、使ってください。
+makeconnection.phpと同じ内容がそのまま帰ってきます。json.dumpsするなりして、使ってください。
 
 ----
  
@@ -109,4 +109,4 @@ makeconnection.phpと同じ内容がそのまま帰ってきます。json.damps�
 
 ファイル内に呼び出しを放置しているので、それを参考にしてください。  
 帰ってくるのは、movieobs.phpと同じ内容が帰ってきます。  
-userregistと同様、json.dampsするなりして使ってください。
+userregistと同様、json.dumpsするなりして使ってください。
