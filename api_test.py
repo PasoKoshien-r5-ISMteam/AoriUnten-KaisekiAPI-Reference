@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 #APIとの通信に使うUUIDを保存&読み込みする関数
 def LoSaUUID(or_ls,uuid=""):
