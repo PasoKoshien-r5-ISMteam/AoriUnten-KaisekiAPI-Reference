@@ -1,6 +1,17 @@
 import requests
 import os
 
+#APIとの通信に使うUUIDを保存&読み込みする関数
+def LoSaUUID(or_ls,uuid=""):
+    if(or_ls == "Load"):
+        with open("settings.json",'r') as f:
+            js_l = json.loads(f.read())
+            return js_l['uuid']
+    elif(or_ls == "Save"):
+        with open("settings.json",'w') as f:
+            data = {"uuid":uuid}
+            f.write(json.dumps(data))
+
 #ユーザ登録
 def userregist(addres,passowrd):
     url = "http://procon.schnetworks.net/api/makeconnection.php"
