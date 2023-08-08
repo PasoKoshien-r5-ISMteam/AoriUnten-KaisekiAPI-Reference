@@ -26,7 +26,7 @@ def userregist(addres,passowrd):
     return ps_result.text
 
 #動画ファイルの送信(20秒,mp4 MPEG-4フォーマットのみ対応)
-def sendMovieData(filepath,uuid):
+def sendMovieData(filepath,uuid=LoSaUUID("Load")):
     url = "http://procon.schnetworks.net/api/movieobs.php"
     file = {
         'file1':open(filepath,"rb")
