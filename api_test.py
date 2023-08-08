@@ -22,6 +22,7 @@ def userregist(addres,passowrd):
         'pass':passowrd
     }
     ps_result = requests.post(url,data=postitems)
+    LoSaUUID("Save",json.loads(ps_result.text)['userdata']['uuid'])
     return ps_result.text
 
 #動画ファイルの送信(20秒,mp4 MPEG-4フォーマットのみ対応)
@@ -37,4 +38,5 @@ def sendMovieData(filepath,uuid):
     ps_result = requests.post(url,data=postitems,files=file)
     return ps_result.text
 
-sendMovieData("録画した20秒のファイル","makeconnectionで帰ってきたuuid")
+print(LoSaUUID("Load"))
+#print(sendMovieData("D:/UserData/Siraisi/Videos/aoriunntenn_test.mp4","a25e898f_32bc_4756_b674_08c5a8f37d33"))
